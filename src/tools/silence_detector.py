@@ -5,7 +5,13 @@ import srt_parser as srtp
 
 class silence_detector():
     
-    def detect_silence(self, audio_filename, noise_tolerance = 0.12, silence_duration = 0.5, max_duration = None, delta = 0.25):
+    def __init__(self, gui_manager):
+        self.gui_manager = gui_manager
+    
+    def LogProgress(self, msg):
+        self.gui_manager.LogProgress(msg)
+    
+    def detect_silence(self, audio_filename, noise_tolerance = 0.12, silence_duration = 0.45, max_duration = None, delta = 0.35):
         '''
             Detects periods of silence in the audio file.
 
@@ -29,7 +35,7 @@ class silence_detector():
             process = subprocess.Popen(convert_command, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
             output, error = process.communicate()
         except Exception, e:
-            print 'Exception when converting file. Reason: ' + unicode(e.message)
+            self.LogProgress('Exception when converting file. Reason: ' + unicode(e.message))
 
         if process != None:
             process.terminate()
@@ -100,7 +106,7 @@ class silence_detector():
                 output, error = process.communicate()                
                 map.append((self.to_ms(start), self.to_ms(end), '{0}_{1}.wav'.format(output_path, idx+1)))
             except Exception, e:
-                print 'Exception when triming file. Reason: ' + unicode(e.message)
+                self.LogProgress('Exception when triming file. Reason: ' + unicode(e.message))
 
         return map
     

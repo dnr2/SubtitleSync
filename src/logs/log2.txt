@@ -1,0 +1,132 @@
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/video_samples/SYNC-friends.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145153672231.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 24 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_1.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_2.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_3.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_4.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_5.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_6.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_7.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_8.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_9.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_10.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_11.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_12.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_13.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_14.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_15.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_16.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_17.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_18.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_19.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_20.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_21.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_22.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_23.wav
+-- recognizing audio_samples\trimmed\audio_145153672231\audio_145153672231_24.wav
+
+17 out of 24 successful transcriptions.
+(0, 2919, u"there's nothing to tell")
+(4526, 8584, u'come on you are going out with the guys I got to be something wrong with them')
+(8427, 10906, u'how do I be nice')
+(11539, 17315, u'does he have a hump on Havana hair piece')
+(17437, 20473, u'Savannah want to go to go through what I went through')
+(20316, 21495, u'show with Carl')
+(21430, 29018, u'black')
+(30115, 39328, u'translate date to me')
+(39403, 42067, u'naked')
+(42746, 46061, u"then I look down and I realize there's a phone")
+(47344, 48244, u'there')
+(51198, 56417, u'instead of a trifle')
+(56910, 58275, u'starts to ring')
+(59093, 62222, u"no I don't know what to do everybody starts looking at me")
+(65595, 67981, u"find me I figure I'd better answer it")
+(69356, 71325, u"and it turns out it's my mother")
+(71539, 75086, u'which is very very weird because')
+
+Reading subtitles...
+Read 24 subtitles.
+(500, 4600, 'N\xc3\xa3o h\xc3\xa1 nada para contar!\nEle \xc3\xa9 s\xc3\xb3 um cara do trabalho!')
+(4800, 7040, 'Voc\xc3\xaa est\xc3\xa1 saindo com esse cara!')
+(7200, 9600, 'Deve ter alguma coisa\nerrada com ele!')
+(9600, 11680, 'Tudo bem, Joey,\nvai com calma.')
+(12000, 14720, 'Ent\xc3\xa3o, ele \xc3\xa9 corcunda?\nCorcunda e careca?')
+(16200, 18240, 'Espera a\xc3\xad, ele come giz?')
+(18600, 21600, '\xc3\x89 que eu n\xc3\xa3o quero que ela passe pela\nmesma coisa que eu passei com o Carl!')
+(21600, 23400, 'Tudo bem, gente, relaxem')
+(23400, 25720, 'Relaxem.\nN\xc3\xa3o \xc3\xa9 nem um encontro.')
+(25800, 29320, 'S\xc3\xa3o s\xc3\xb3 duas pessoas indo jantar\njuntas sem fazer sexo.')
+(30600, 33500, 'Parece um encontro para mim.')
+(34800, 37800, 'Ent\xc3\xa3o eu estou de volta ao colegial.\nl\xc3\xa1 no meio da lanchonete ...')
+(37800, 40440, '... totalmente pelado.')
+(40800, 42680, 'Ah, sim. J\xc3\xa1 tive o mesmo sonho.')
+(43200, 46400, 'Ent\xc3\xa3o eu olho para baixo e percebo\nque tem um telefone ...')
+(47400, 48920, '... l\xc3\xa1.')
+(51600, 53400, '-Em vez de ...?\n-Isso mesmo!')
+(53400, 55200, 'Nunca tive esse sonho.')
+(55200, 58040, 'De repente, o telefone come\xc3\xa7a a tocar.')
+(59400, 62400, 'Agora, eu n\xc3\xa3o sei o que fazer,\ntodo mundo come\xc3\xa7a a olhar pra mim.')
+(62400, 64880, 'E eles n\xc3\xa3o olhavam antes?')
+(66000, 68680, 'Finalmente, eu penso:\n"\xc3\x89 melhor eu atender".')
+(69600, 71960, 'E \xc3\xa9 minha mae.')
+(73800, 78040, 'O que \xc3\xa9 muito, muito estranho,\nporque ela nunca me liga!')
+
+Translating subtitles...
+24 out of 24 successful translations.
+(500, 4600, u"There's nothing to tell!\nHe's just a guy from work!")
+(4800, 7040, u'Are you going out with this guy!')
+(7200, 9600, u'There must be something wrong with him!')
+(9600, 11680, u'Okay, Joey, take it easy.')
+(12000, 14720, u"So he's a hunchback?\nHunchback and bald?")
+(16200, 18240, u'Wait a minute, he eat chalk?')
+(18600, 21600, u"Is that I don't want her to go through the same thing I went through with Carl!")
+(21600, 23400, u'All right, guys, relax')
+(23400, 25720, u"Relax.\nIt's not even a date.")
+(25800, 29320, u"It's just two people going out to dinner together without having sex.")
+(30600, 33500, u'Sounds like a date to me.')
+(34800, 37800, u"So I'm back to high school.\nthere in the middle of the cafeteria.")
+(37800, 40440, u'... completely naked.')
+(40800, 42680, u"Oh, Yes. I've had the same dream.")
+(43200, 46400, u'Then I look down and realize I have a phone ...')
+(47400, 48920, u"I don't know...")
+(51600, 53400, u"-Instead of ...?\n-That's right!")
+(53400, 55200, u'Never had this dream.')
+(55200, 58040, u'All of a sudden, the phone starts ringing.')
+(59400, 62400, u"Now, I don't know what to do, everybody starts looking at me.")
+(62400, 64880, u'And they have not looked before?')
+(66000, 68680, u'Finally, I think: "I\'d better meet".')
+(69600, 71960, u'And is my mother.')
+(73800, 78040, u'What is very, very strange, because she never calls me!')
+
+Matching subtitles and transcriptions...
+
+Intermediate matching = [[0], [1, 2, 3], [1, 2, 3], [1, 2, 3], [4, 5, 6], [4, 5, 6], [4, 5, 6], [7], [7], [7], [8], [8], [8], [9], [9], [9], [10, 11, 12], [10, 11, 12], [10, 11, 12], [13], [13], [13], [14, 15], [16]]
+Final subtitles...
+(0, 4100, 'N\xc3\xa3o h\xc3\xa1 nada para contar!\nEle \xc3\xa9 s\xc3\xb3 um cara do trabalho!')
+(4526, 17315, 'Voc\xc3\xaa est\xc3\xa1 saindo com esse cara!\nDeve ter alguma coisa\nerrada com ele!\nTudo bem, Joey,\nvai com calma.')
+(17437, 29018, 'Ent\xc3\xa3o, ele \xc3\xa9 corcunda?\nCorcunda e careca?\nEspera a\xc3\xad, ele come giz?\n\xc3\x89 que eu n\xc3\xa3o quero que ela passe pela\nmesma coisa que eu passei com o Carl!')
+(30115, 39328, 'Tudo bem, gente, relaxem\nRelaxem.\nN\xc3\xa3o \xc3\xa9 nem um encontro.\nS\xc3\xa3o s\xc3\xb3 duas pessoas indo jantar\njuntas sem fazer sexo.')
+(39403, 42067, 'Parece um encontro para mim.\nEnt\xc3\xa3o eu estou de volta ao colegial.\nl\xc3\xa1 no meio da lanchonete ...\n... totalmente pelado.')
+(42746, 46061, 'Ah, sim. J\xc3\xa1 tive o mesmo sonho.\nEnt\xc3\xa3o eu olho para baixo e percebo\nque tem um telefone ...\n... l\xc3\xa1.')
+(47344, 58275, '-Em vez de ...?\n-Isso mesmo!\nNunca tive esse sonho.\nDe repente, o telefone come\xc3\xa7a a tocar.')
+(59093, 62222, 'Agora, eu n\xc3\xa3o sei o que fazer,\ntodo mundo come\xc3\xa7a a olhar pra mim.\nE eles n\xc3\xa3o olhavam antes?\nFinalmente, eu penso:\n"\xc3\x89 melhor eu atender".')
+(65595, 67955, 'E \xc3\xa9 minha mae.')
+(71539, 75779, 'O que \xc3\xa9 muito, muito estranho,\nporque ela nunca me liga!')
+
+Writing synchronized subtile in file...
+
+Saving subtitle in: C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/subtitle_samples/friends-SYNC-1451536848247.srt
+
+End of synchronization...

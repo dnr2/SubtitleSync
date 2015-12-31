@@ -3,7 +3,7 @@ import subprocess
 import time
 
 class video_manager():
-    def __init__(self, video):
+    def __init__(self, video, gui_manager):
         '''
             Class constructor
 
@@ -14,7 +14,11 @@ class video_manager():
                 None
         '''
         self.video_path = video
-
+        self.gui_manager = gui_manager
+    
+    def LogProgress(self, msg):
+        self.gui_manager.LogProgress(msg)
+    
     def get_audio_from_video(self, video = None):
         '''
             Generate a wave file containing the audio from a video (160kbits/s, 44100Hz, 2 channels)
@@ -32,14 +36,14 @@ class video_manager():
         audio_filename = os.path.join('audio_samples', "audio_" + str(time.time()).replace('.','') + '.wav')
         convert_command = "ffmpeg -i \"{0}\" -ab 160k -ac 1 -ar 44100 -vn \"{1}\"".format(self.video_path, audio_filename)
 
-        print "Running " + convert_command
+        self.LogProgress("Running " + convert_command + "\n")
 
         try:
             process = subprocess.Popen(convert_command, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
             output, error = process.communicate()
 
         except Exception, e:
-            print 'Exception when converting file. Reason: ' + unicode(e.message)
+            self.LogProgress('Exception when converting file. Reason: ' + unicode(e.message))
 
         if process != None:
             process.terminate()

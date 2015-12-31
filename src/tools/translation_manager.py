@@ -188,9 +188,7 @@ class GoogleTranslator(object):
         connection = self.connection
         resp, content = connection.request(url, headers={'user-agent' : api,
                             'cache-control' : self.cache_control})
-        #DEBUG
-        #if resp.fromcache:
-        #   print "Using from the cache"
+        #DEBUG        
         return content
 
     def _sanitize_query(self, query):

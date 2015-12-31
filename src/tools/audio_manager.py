@@ -3,6 +3,13 @@ import subprocess
 import re
 
 class audio_manager():
+
+    def __init__(self, gui_manager):
+        self.gui_manager = gui_manager
+    
+    def LogProgress(self, msg):
+        self.gui_manager.LogProgress(msg)
+    
     def split_wav_file(self, a_path, number_of_parts):
         '''
             Split a wave file in number_of_parts parts.

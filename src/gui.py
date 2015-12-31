@@ -1,14 +1,21 @@
 #!/usr/bin/python
-# Python GUI module
+# Python GUI module using Tkinter.
+
+import os
+import sys
+import threading
+import functools
+
 import Tkinter
+import ttk
 import Tkconstants
 import tkFileDialog
 import tkMessageBox
 
 class TkOpenFileDialog(Tkinter.Frame):
-    def __init__(self, root, label_txt = 'Input file:', button_txt = 'Choose File', defaultextension = '.txt', filetypes = [('text files', '.txt')], initialdir = 'C:\\'):
+    def __init__(self, root, label_txt = 'Input file:', button_txt = 'Choose File', defaultextension = '.txt', filetypes = [('text files', '.txt')], initialdir = os.getcwd()):
         '''
-        Sets up the widgets for this FileDialog        
+        Sets up the widgets for this FileDialog and FileDialog options.
         '''
         
         Tkinter.Frame.__init__(self, root)
@@ -40,36 +47,139 @@ class TkOpenFileDialog(Tkinter.Frame):
 
         # open file on your own
         if filename:      
-            self.entry.delete(0)
+            self.entry.delete(0, len(self.entry.get()))
             self.entry.insert(0, filename)
             
+class SynchronizingProgressFrame(Tkinter.Frame):
+    def __init__(self, root, max_progress_value, exit_function):
+        '''
+        Sets up options and widgets for this frame.
+        '''
+        Tkinter.Frame.__init__(self, root)
+        self.max_value = max_progress_value
+        
+        common_opt = {'fill': Tkconstants.BOTH, 'padx': 40, 'pady': 5}
+        
+        # define widgets
+        label_progress1 = Tkinter.Label(self, text= "Global Progress:")
+        label_progress1.pack(common_opt)        
+        
+        self.pb_hD = ttk.Progressbar(self, orient='horizontal', length=400, mode='determinate', maximum = self.max_value)
+        self.pb_hD.pack(common_opt)   
+        
+        label_logs = Tkinter.Label(self, text= "Logs:")
+        label_logs.pack()
+        
+        self.text_frame = Tkinter.Frame(self)
+        self.text_frame.pack({'fill': Tkconstants.BOTH, 'padx': 0, 'pady': 5})
+        
+        self.scrollbar = Tkinter.Scrollbar(self.text_frame)
+        self.scrollbar.pack(side=Tkinter.RIGHT, fill=Tkinter.Y)
+        
+        self.text_logs = Tkinter.Text(self.text_frame, yscrollcommand = self.scrollbar.set)
+        self.text_logs.pack({'fill': Tkconstants.BOTH})
+        self.text_logs.config(state=Tkinter.DISABLED)
+        
+        self.scrollbar.config(command=self.text_logs.yview)
+        
+        self.btn_cancel = Tkinter.Button(self, text ="Cancel", command = exit_function, bg = '#ffc2b3')
+        self.btn_cancel.pack({'fill': Tkconstants.BOTH, 'padx': 100, 'pady': 25})
+    
+    def GetProgressBarValue(self):
+        return self.pb_hD["value"]
+    
+    def SetProgressBarToValue(self, value):        
+        if value >= 0 and value <= self.max_value:
+            self.pb_hD["value"] = value
+        
+    def InsertToLogs(self, log_msg):        
+        self.text_logs.config(state=Tkinter.NORMAL)
+        self.text_logs.insert(Tkinter.END, log_msg)
+        self.text_logs.config(state=Tkinter.DISABLED)
+    
 class GuiManager():
     def __init__(self, syncBtnCallBack):
         self.root = Tkinter.Tk()
     
         # Properties
-        self.root.geometry("470x350")
+        self.root.geometry("400x300")
         self.root.title("SubSync - Automatic Subtitle Synchronizer")
         self.root.resizable(0,0)
+                
+        self.root.protocol("WM_DELETE_WINDOW", self.ExitProgram)
         
         # Code to add widgets will go here
-        self.video_file_dialog = TkOpenFileDialog(self.root, label_txt = "Video input file:", defaultextension = '.avi', filetypes = [('Audio Video Interleave', '.avi')])
+        self.select_frame = Tkinter.Frame(self.root)
+        self.video_file_dialog = TkOpenFileDialog(
+            self.select_frame, 
+            label_txt = "Video input file:", 
+            defaultextension = '.avi', 
+            filetypes = [('Audio Video Interleave', '.avi'), ('MPEG-4','.mp4')])
         self.video_file_dialog.pack()
-        self.subtitle_file_dialog = TkOpenFileDialog(self.root, label_txt = "Subtitle input file:", defaultextension = '.srt', filetypes = [('SubRip text file', '.srt')])
+        self.subtitle_file_dialog = TkOpenFileDialog(
+            self.select_frame, 
+            label_txt = "Subtitle input file:", 
+            defaultextension = '.srt',
+            filetypes = [('SubRip text file', '.srt')])
+
         self.subtitle_file_dialog.pack()
-        self.btn_syn = Tkinter.Button(self.root, text ="Synchronize subtitle", command = syncBtnCallBack, bg = '#ffc2b3')
+        self.btn_syn = Tkinter.Button(self.select_frame, text ="Synchronize subtitle", command = syncBtnCallBack, bg = '#ffc2b3')
         self.btn_syn.pack({'fill': Tkconstants.BOTH, 'padx': 100, 'pady': 25})
+        self.select_frame.pack()
         self.GenerateMenuBar()
-        
+    
+    def ExitProgram(self):
+        self.root.destroy()
+        sys.exit()
+    
     def RunSubSyncGuiMainLoop(self):
         # Kick off the main loop
         self.root.mainloop()
         
     def DisplayPromptMsg(self, window_name = "Prompt", message_txt = "Message"):
         tkMessageBox.showinfo(window_name, message_txt)
+    
+    def LogProgress(self, msg):
+        self.progress_lock.acquire()        
+        self.progress_logs.append(msg)
+        self.progress_lock.release()
+    
+    def InitSynchronizingProgressFrame(self):
+        self.root.geometry("700x550")
+        self.root.resizable(0, 0)
+        self.select_frame.destroy()
+        
+        # set shared variables
+        self.progress_value = 0
+        self.max_progress_value = 1000
+        self.progress_logs = []
+        self.progress_lock = threading.Lock()
+
+        # create Frame to keep track of the progress of synchronization        
+        self.progress_frame = SynchronizingProgressFrame(self.root, self.max_progress_value, self.ExitProgram)
+        self.progress_frame.pack()
+
+    def UpdateSynchronizingProgressFrame(self):
+        self.progress_lock.acquire()
+        
+        value = self.progress_frame.GetProgressBarValue()
+        if value < self.progress_frame.max_value:
+            # TODO delete this
+            self.progress_value += 1
+            self.progress_frame.SetProgressBarToValue(self.progress_value)            
+            for log in self.progress_logs:
+                self.progress_frame.InsertToLogs(log)
+            self.progress_logs = []
+            self.progress_lock.release()
+            self.progress_frame.after(200, self.UpdateSynchronizingProgressFrame)
+        else:
+            self.DisplayPromptMsg(
+                window_name = "SubSync", 
+                message_txt = "Successful synchronization.\nOutput file written")
+            # TODO should exit?
+            self.progress_lock.release()
         
     def GenerateMenuBar(self):
-        
         def donothing():
             self.DisplayPromptMsg(message_txt = "Under Implementation")
             
@@ -78,7 +188,7 @@ class GuiManager():
             self.about_window.geometry("400x400")
             self.about_window.transient(self.root)
             self.about_window.grab_set()
-            self.root.wait_window(about_window)
+            self.root.wait_window(self.about_window)
             
         menubar = Tkinter.Menu(self.root)
         

@@ -6,6 +6,13 @@ import speech_recognition.speech_recognition as SpeechRecognizer
 from translation.translate import Translator
 
 class speech_recognition_manager():
+
+    def __init__(self, gui_manager):
+        self.gui_manager = gui_manager
+        
+    def LogProgress(self, msg):
+        self.gui_manager.LogProgress(msg)
+
     def speech_to_text(self, timestamped_segments):
         '''
             Returns a list containing timestamped texts related to each audio file provided.
@@ -34,14 +41,14 @@ class speech_recognition_manager():
             with SpeechRecognizer.WavFile(timestamped_segment[2]) as source:
                 audio = recognizer.record(source)
 
-            print "-- recognizing " + timestamped_segment[2]
+            self.LogProgress("-- recognizing " + timestamped_segment[2] + "\n")
             for times in range(0,2):
                 try:
                     transcription = recognizer.recognize(audio)
                     break
                 except LookupError as error:
                     if times == 1 :
-                        print("Could not understand audio")
+                        self.LogProgress("Could not understand audio\n")
 
             if transcription != '':
                 timestamped_texts.append((timestamped_segment[0], timestamped_segment[1], unicode(transcription)))
