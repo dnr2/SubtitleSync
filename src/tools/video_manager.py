@@ -36,14 +36,14 @@ class video_manager():
         audio_filename = os.path.join('audio_samples', "audio_" + str(time.time()).replace('.','') + '.wav')
         convert_command = "ffmpeg -i \"{0}\" -ab 160k -ac 1 -ar 44100 -vn \"{1}\"".format(self.video_path, audio_filename)
 
-        self.LogProgress("Running " + convert_command + "\n")
+        self.LogProgress(u"Running " + convert_command + "\n")
 
         try:
             process = subprocess.Popen(convert_command, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
             output, error = process.communicate()
 
         except Exception, e:
-            self.LogProgress('Exception when converting file. Reason: ' + unicode(e.message))
+            self.LogProgress(u'Exception when converting file. Reason: ' + str(e.message))
 
         if process != None:
             process.terminate()

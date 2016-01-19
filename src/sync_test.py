@@ -32,6 +32,17 @@ print "Testing sentence distance: "
 print mm.sentence_distance(str1, str2)
 print mm.sentence_distance(str1, str3)
 
+print "Testing sentence distance: "
+str1 = u"The government consider these people irrelevant, we don't..."
+str2 = u"People that, different from us, the government considered irrelevant."
+str3 = u"The government is irrelevant in an anarchy."
+str4 = u"I designed the machine to detect acts of Terror."
+
+print mm.sentence_distance_dp(str1, str1)
+print mm.sentence_distance_dp(str1, str2)
+print mm.sentence_distance_dp(str1, str3)
+print mm.sentence_distance_dp(str1, str4)
+
 original_subs = [(3000, 3100, u"Nao ha nada para contar! Ele e so um cara do trabalho!"),
         (4000, 4100, u"Voce esta saindo com esse cara!"),
         (4500, 4600, u"Deve ter alguma coisa errada com ele!"),

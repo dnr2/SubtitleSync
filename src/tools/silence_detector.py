@@ -35,7 +35,7 @@ class silence_detector():
             process = subprocess.Popen(convert_command, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
             output, error = process.communicate()
         except Exception, e:
-            self.LogProgress('Exception when converting file. Reason: ' + unicode(e.message))
+            self.LogProgress(u'Exception when converting file. Reason: ' + unicode(e.message))
 
         if process != None:
             process.terminate()
@@ -62,8 +62,18 @@ class silence_detector():
 
             #if max_duration is not None and duration > max_duration:
                 #TODO: has to cut more
-
-            return filter(lambda a: a[0] + 1e-2 < a[1], zip(start_audio, end_audio))
+            
+            inter = filter(lambda a: a[0] + 1e-2 < a[1], zip(start_audio, end_audio))
+            
+            #merge intervals that are closer than 2 s and don't exceed 5 s duration
+            sz = len(inter)
+            if sz > 1:
+                for i in reversed(range(sz-1)):
+                    if inter[i+1][0] - inter[i][1] < 2.0 and inter[i+1][1] - inter[i][0] < 5.0:
+                        inter[i] = (inter[i][0], inter[i+1][1])
+                        del inter[i+1]
+            return inter
+                
 
     def split_on_silence(self, audio_filename, output_filename = None):
         '''

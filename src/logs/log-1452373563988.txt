@@ -1,0 +1,142 @@
+Sat Jan 09 19:06:04 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/Forrest Gump (1-9) Movie CLIP - Peas and Carrots (1994) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145237340197.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 37 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_1.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_2.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_3.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_4.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_5.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_6.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_7.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_8.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_9.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_10.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_11.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_12.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_13.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_14.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_15.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_16.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_17.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_18.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_19.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_20.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_21.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_22.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_23.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_24.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_25.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_26.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_27.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_28.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_29.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_30.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_31.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_32.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_33.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_34.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_35.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_36.wav
+-- recognizing audio_samples\trimmed\audio_145237340197\audio_145237340197_37.wav
+
+31 out of 37 successful transcriptions.
+(0, 5380, u"I don't recall what I got for my first Christmas I don't know when I went on my first outdoor picnic")
+(5223, 6030, u'butt')
+(7173, 10024, u'I do remember the first time I heard')
+(9960, 11649, u'sweetest voice')
+(11399, 12903, u'at work')
+(13721, 15457, u'hair growing')
+(18690, 22609, u'I had never seen anything so beautiful in my life')
+(23149, 25256, u'she was locked in a Manger')
+(25378, 27485, u'I want to sit down')
+(33273, 34173, u'drawing')
+(33969, 35009, u'legs')
+(35084, 39699, u"I'm nothing I think you know it you're just fine and dandy")
+(40285, 47547, u'I just sat next to her on the bus and had a conversation all The Latest Scoop')
+(47483, 49869, u'disorganized')
+(49666, 53492, u'so no one ever talk to me or ask me questions')
+(54124, 56232, u'Easter something')
+(56121, 59297, u'mama says stupid is as stupid does')
+(60719, 61758, u'angeni')
+(62622, 64730, u"I'm Forrest Forrest Gump")
+(65084, 70024, u'that day on we was always together Jenny and me was like peas and carrots')
+(72979, 80102, u'she taught me how to climb')
+(79898, 84932, u'would like to help me learn how to read')
+(85935, 87997, u'natural hair how to swag')
+(89836, 92083, u'sometimes we just sit out')
+(91880, 93801, u'white for the Stars')
+(93830, 96170, u'promise going to worry about me')
+(96617, 98724, u'just a little longer')
+(99914, 103275, u"for some reason Jenny didn't ever want to go home")
+(103815, 106155, u"okay Jenny I'll stay")
+(106833, 108012, u'she was mine')
+(107855, 109591, u'most special friend')
+
+Reading subtitles...
+Read 25 subtitles.
+(814660, 816641, 'nem do que ganhei\nno meu primeiro Natal...')
+(816850, 821855, 'nem de quando fui no meu\nprimeiro piquenique, mas...')
+(822064, 828007, 'me lembro da primeira vez\nque ouvi a voz mais doce do mundo.')
+(828111, 831240, 'Pode sentar aqui, se quiser.')
+(833534, 837288, '<i>Nunca tinha visto nada mais lindo\nem toda a minha vida.</i>')
+(838018, 842084, '<i>- Ela parecia um anjo.\n- Vai sentar ou n\xe3o vai?</i>')
+(848027, 849487, 'O que voc\xea tem nas pernas?')
+(849696, 855014, 'N\xe3o \xe9 nada, obrigado.\nMinhas pernas v\xe3o indo muito bem.')
+(855223, 859289, '<i>Sentei do lado dela e fomos\nconversando at\xe9 a escola.</i>')
+(859497, 863147, '...minhas costas parecem um ponto\nde interroga\xe7\xe3o, e o aparelho...')
+(863356, 868778, '<i>Ningu\xe9m falava comigo ou me fazia\nperguntas, al\xe9m de mam\xe3e.</i>')
+(868986, 870446, 'Voc\xea \xe9 idiota, ou o qu\xea?')
+(870655, 874095, 'Mam\xe3e diz que idiota\n\xe9 quem faz idiotice.')
+(875555, 879726, '- Eu sou Jenny.\n- Eu sou Forrest. Forrest Gump.')
+(879935, 881707, '<i>Depois disso, a gente\nestava sempre junto.</i>')
+(881916, 884836, '<i>Jenny e eu \xe9ramos\ncomo p\xe3o e manteiga.</i>')
+(888173, 889840, '<i>Ela me ensinou a subir na \xe1rvore...</i>')
+(890049, 892656, 'Vem, Forrest, voc\xea consegue!')
+(892864, 895158, '<i>E eu a ensinei a balan\xe7ar.</i>')
+(897557, 903605, '<i>Ela me ajudou a aprender a ler,\ne eu a ensinei a balan\xe7ar.</i>')
+(904752, 908506, '<i>\xc0s vezes, fic\xe1vamos sentados,\nesperando as estrelas.</i>')
+(908714, 914657, '<i>- Minha m\xe3e vai ficar preocupada.\n- Fica s\xf4 mais um pouquinho.</i>')
+(914866, 918516, '<i>Por alguma raz\xe3o,\nJenny nunca queria ir para casa.</i>')
+(918724, 921540, 'Est\xe1 bem, Jenny, eu fico.')
+(921748, 925189, '<i>Ela era minha amiga mais especial...</i>')
+
+Translating subtitles...
+25 out of 25 successful translations.
+(814660, 816641, u'not what I got for my first Christmas ...')
+(816850, 821855, u'even when I went on my first picnic, but ...')
+(822064, 828007, u'remember the first time I heard the sweetest voice in the wide world.')
+(828111, 831240, u'You can sit here, if you want.')
+(833534, 837288, u"<i>I've never seen anything more beautiful in my entire life.</i>")
+(838018, 842084, u'<i>She looked like an Angel.\n-Sit or no will?</i>')
+(848027, 849487, u'What you have on your legs?')
+(849696, 855014, u'No nothing, thank you.\nMy legs v going very well.')
+(855223, 859289, u'<i>I sat down next to her and we were talking at the school.</i>')
+(859497, 863147, u'... my back look like a point of wonders, and the appliance.')
+(863356, 868778, u'<i>Nobody m talked to me or asked me questions, al m mam and.</i>')
+(868986, 870446, u'You idiot, or what?')
+(870655, 874095, u'MAM and says idiot who makes stupid.')
+(875555, 879726, u"I'm Jenny.\n-I'm Forrest. Forrest Gump.")
+(879935, 881707, u'<i>After that, we were always together.</i>')
+(881916, 884836, u'<i>Jenny and I ramos as p and butter.</i>')
+(888173, 889840, u'<i>She taught me to climb the tree.</i>')
+(890049, 892656, u'Come on, Forrest, you can!')
+(892864, 895158, u'<i>And I showed her how to balan air.</i>')
+(897557, 903605, u'<i>She helped me learn how to read, and I taught her how to balan air.</i>')
+(904752, 908506, u"<i>Sometimes, fic we're sitting, waiting for the stars.</i>")
+(908714, 914657, u'<i>-My m and will be worried.\nIt Is s a little bit more.</i>')
+(914866, 918516, u'<i>For some reason, Jenny never seemed to want to go home.</i>')
+(918724, 921540, u"Okay, Jenny, I'm staying.")
+(921748, 925189, u'<i>She was my friend more special.</i>')
+
+Matching subtitles and transcriptions...

@@ -1,0 +1,56 @@
+Tue Jan 05 19:28:25 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/video_samples/cut.mp4" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145202926863.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 12 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_2.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_3.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_4.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_5.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_6.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_7.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_8.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_9.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_10.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_11.wav
+-- recognizing audio_samples\trimmed\audio_145202926863\audio_145202926863_12.wav
+Could not understand audio
+
+8 out of 12 successful transcriptions.
+(4898, 7470, u'presenting my new friends wanted very badly')
+(7638, 10535, u'vintage Beast')
+(11214, 12114, u'engaged')
+(12142, 13646, u'installation')
+(13814, 16061, u"clean laundry won't turn on us")
+(16183, 17733, u'there is enough evidence')
+(17715, 20148, u'bring up full mattress for sale RS')
+(19944, 21170, u'Android Market')
+
+Reading subtitles...
+Read 7 subtitles.
+(481, 537, 'Voc\xea matou Joffrey?')
+(2538, 2748, 'Meus novos amigos\nqueriam muito isso.')
+(5749, 8393, 'Eu n\xe3o a deixaria casar\ncom aquele monstro.')
+(8394, 11822, 'N\xf3s mantivemos\nrela\xe7\xf5es \xedntimas.')
+(12823, 15249, 'A Rainha Margaery\nnos pegou juntos.')
+(15250, 19061, 'As evid\xeancias permitem\nque julguemos Sor Loras.')
+(20062, 22103, 'E a Rainha Margaery.\nLevem-na.')
+
+Translating subtitles...
+7 out of 7 successful translations.
+(481, 537, u'You killed Joffrey.')
+(2538, 2748, u'My new friends wanted.')
+(5749, 8393, u'I n let her marry with that Monster.')
+(8394, 11822, u'N s kept frog es ntimas.')
+(12823, 15249, u'The Queen is Margaery got us together.')
+(15250, 19061, u'The evidences tendencies allow Judge Ser Loras.')
+(20062, 22103, u'And the Queen is Margaery.\nTake her.')
+
+Matching subtitles and transcriptions...

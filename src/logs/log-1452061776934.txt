@@ -1,0 +1,28 @@
+Wed Jan 06 04:29:36 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/The Good, the Bad and the Ugly (1-12) Movie CLIP - Angel Eyes Finishes the Job (1966) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145206175541.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 2 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145206175541\audio_145206175541_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145206175541\audio_145206175541_2.wav
+Could not understand audio
+
+0 out of 2 successful transcriptions.
+
+Reading subtitles...
+Read 9 subtitles.
+(772700, 775800, 'Quanto \xe9 que ele lhe pagou\npara me matar?')
+(778300, 782600, '500 d\xf3lares para conseguir o nome.')
+(788900, 790900, 'O nome.')
+(799900, 802600, 'Carson. Bill Carson.')
+(803500, 806600, 'Agora \xe9 assim que ele se chama.')
+(836100, 839100, 'Todo o meu dinheiro... mil.')
+(843100, 845600, 'Mil d\xf3lares.')
+(847400, 851600, 'E algum em ouro...\n\xc9 uma bela quantia.')
+(855000, 860800, 'Mas quando sou pago,\nfa\xe7o sempre o meu trabalho.')
+
+Translating subtitles...

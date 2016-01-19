@@ -1,0 +1,254 @@
+Fri Jan 15 17:51:17 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/The Dark Knight (1-9) Movie CLIP - Kill the Batman (2008) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145288725388.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 79 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_2.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_3.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_4.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_5.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_6.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_7.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_8.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_9.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_10.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_11.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_12.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_13.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_14.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_15.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_16.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_17.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_18.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_19.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_20.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_21.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_22.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_23.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_24.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_25.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_26.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_27.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_28.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_29.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_30.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_31.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_32.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_33.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_34.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_35.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_36.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_37.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_38.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_39.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_40.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_41.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_42.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_43.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_44.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_45.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_46.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_47.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_48.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_49.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_50.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_51.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_52.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_53.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_54.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_55.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_56.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_57.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_58.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_59.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_60.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_61.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_62.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_63.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_64.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_65.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_66.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_67.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_68.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_69.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_70.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_71.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_72.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_73.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_74.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_75.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_76.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_77.wav
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_78.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145288725388\audio_145288725388_79.wav
+Could not understand audio
+
+55 out of 79 successful transcriptions.
+(2483, 4405, u"that's why the clock back")
+(4944, 5984, u'DS')
+(5919, 7841, u"cops and lawyers wouldn't")
+(7638, 9699, u'deer crossing')
+(13675, 14807, u'what happened')
+(14882, 16572, u'the ball drop off')
+(18226, 19776, u'pink eye')
+(19526, 20659, u'like me')
+(20966, 21913, u'freak')
+(23381, 25210, u'I like')
+(26817, 28693, u'I know why')
+(28721, 30040, u'YouTube The Heavy')
+(30579, 31340, u'little')
+(31368, 35194, u'group therapy sessions in broad daylight')
+(35177, 36913, u"I know why you're")
+(36988, 37702, u'way to go out')
+(39960, 41650, u'the Batman')
+(42328, 43554, u'Batman has')
+(43396, 44761, u'Shawn got injured')
+(44511, 45225, u'Google')
+(46229, 47269, u'please')
+(47437, 48290, u'Dan')
+(48412, 49777, u"he's just up again")
+(51616, 53306, u'Glassboro')
+(53660, 54653, u'television')
+(55053, 56650, u'so-called plan')
+(56678, 58182, u'Batman has no jury')
+(57979, 58693, u'crustacean')
+(58722, 61386, u"he'll find him and make him squeal")
+(61229, 62733, u'I know')
+(63412, 64173, u'when I see')
+(67034, 68585, u'put your purpose')
+(68753, 69792, u"it's simple")
+(69542, 70721, u'vehicle')
+(70564, 71278, u'the Batman')
+(72514, 73925, u"if it's so simple")
+(73768, 74808, u'what happened')
+(75626, 77780, u"if you're good at something never do it for")
+(77530, 78244, u'free')
+(79387, 80334, u'say what you will')
+(91601, 92919, u'if we')
+(92716, 93523, u"don't do")
+(93459, 94870, u'what does')
+(95502, 96495, u'Sony')
+(96988, 98260, u'little')
+(98010, 108755, u'a gamble here love you but I got a nickel for his grandma')
+(110502, 113167, u'you think you can steal from us and just walk away')
+(112963, 117161, u'yeah I put the word out 500 grand for this clown dead')
+(117143, 118415, u'a million alive')
+(118304, 120922, u'talking teaching some manners first')
+(121462, 124963, u"I don't listen why don't you give me a call when you")
+(124713, 125984, u'I want to start taking')
+(126152, 127470, u'little more')
+(128381, 129049, u'years')
+(129264, 130443, u'car')
+
+Reading subtitles...
+Read 39 subtitles.
+(2855, 5345, 'Vamos voltar no tempo um ano.')
+(5739, 11231, 'Esses tiras e advogados n\xc3\xa3o\nousariam contrariar nenhum de voc\xc3\xaas.')
+(13333, 14659, 'Pois bem, o que aconteceu?')
+(14859, 17575, 'Voc\xc3\xaas perderam os colh\xc3\xb5es?')
+(18635, 20965, 'Vejam bem, um cara como eu...')
+(21205, 23802, 'Maluco.')
+(24299, 27399, 'Um cara como eu...\nOu\xc3\xa7am.')
+(27514, 31814, 'Eu sei por que voc\xc3\xaas\npreferem fazer suas...')
+(31999, 34699, 'sess\xc3\xb5es de terapia\nem grupo durante o dia.')
+(35365, 38125, 'Sei por que voc\xc3\xaas t\xc3\xaam\nmedo de sair \xc3\xa0 noite.')
+(40331, 41961, 'Batman.')
+(42315, 47585, 'Batman revelou a Gotham quem\nvoc\xc3\xaas realmente s\xc3\xa3o, infelizmente.')
+(47825, 51315, 'Dent \xc3\xa9 apenas o in\xc3\xadcio.')
+(51746, 56516, 'E quanto ao tal plano\napresentado na televis\xc3\xa3o...')
+(56713, 58583, 'Batman n\xc3\xa3o respeita jurisdi\xc3\xa7\xc3\xb5es.')
+(58844, 61404, 'Ele vai encontr\xc3\xa1-lo\ne vai faz\xc3\xaa-lo falar.')
+(61705, 64695, 'Eu sei reconhecer um delator...')
+(65015, 66715, 'e...')
+(67526, 69016, 'O que voc\xc3\xaa prop\xc3\xb5e?')
+(69243, 71673, '\xc3\x89 simples.\nVamos matar Batman.')
+(72839, 75809, 'Se \xc3\xa9 t\xc3\xa3o simples,\npor que j\xc3\xa1 n\xc3\xa3o fez isso?')
+(75973, 78673, 'Se voc\xc3\xaa \xc3\xa9 bom em algo,\njamais fa\xc3\xa7a de gra\xc3\xa7a.')
+(79218, 80488, 'Quanto voc\xc3\xaa quer?')
+(82316, 83836, 'Metade.')
+(85604, 87585, '- Voc\xc3\xaa est\xc3\xa1 louco.\n- N\xc3\xa3o, n\xc3\xa3o estou.')
+(88036, 90166, 'N\xc3\xa3o estou, n\xc3\xa3o.')
+(91793, 95193, 'Se n\xc3\xa3o fizermos isso agora...')
+(95366, 96996, 'logo...')
+(97355, 102255, 'o pequeno Gambol aqui n\xc3\xa3o vai dar\num centavo sequer \xc3\xa0 vovozinha.')
+(103039, 104499, 'Chega de ouvir esse palha\xc3\xa7o!')
+(105568, 107498, 'Calma, nada de explos\xc3\xb5es...')
+(107844, 110364, '- Merda!\n- De raiva.')
+(110637, 113127, 'Acha que pode nos roubar\ne escapar numa boa?')
+(113392, 114952, '- Acho.\n- Vou espalhar por a\xc3\xad:')
+(115069, 117329, 'US$ 500 mil para quem\nmatar este palha\xc3\xa7o.')
+(117583, 120613, 'Vivo, US$ 1 milh\xc3\xa3o.\nAssim, eu o ensino a ter modos.')
+(121766, 124356, 'Muito bem, ou\xc3\xa7am,\nliguem para mim...')
+(124600, 128330, 'quando come\xc3\xa7arem a levar as\ncoisas um pouco mais a s\xc3\xa9rio.')
+(128687, 130557, 'Aqui est\xc3\xa1 meu cart\xc3\xa3o.')
+
+Translating subtitles...
+39 out of 39 successful translations.
+(2855, 5345, u"Let's go back in time a year.")
+(5739, 11231, u"These cops and lawyers wouldn't dare cross any of any of you.")
+(13333, 14659, u'Well, what happened?')
+(14859, 17575, u'You lost your balls?')
+(18635, 20965, u'You see, a guy like me.')
+(21205, 23802, u'bearing shell')
+(24299, 27399, u'A guy like me.\nListen.')
+(27514, 31814, u'I know why you prefer to do your ...')
+(31999, 34699, u'group therapy sessions during the day.')
+(35365, 38125, u"Know why you're afraid to go out at night.")
+(40331, 41961, u'Batman?')
+(42315, 47585, u'Batman revealed the Gotham who you really are, unfortunately.')
+(47825, 51315, u'Dent is only the beginning.')
+(51746, 56516, u'What about such a plan presented on television.')
+(56713, 58583, u'Batman has no jurisdiction.')
+(58844, 61404, u"He's going to find him and get him to talk.")
+(61705, 64695, u'I know squealers.')
+(65015, 66715, u'N')
+(67526, 69016, u'What do you propose?')
+(69243, 71673, u"Is simple.\nWe're going to kill Batman.")
+(72839, 75809, u"If it's so simple, why haven't you done it?")
+(75973, 78673, u"If you're good at something, never do it for free.")
+(79218, 80488, u'How much do you want?')
+(82316, 83836, u'One Half')
+(85604, 87585, u"-You're crazy.\n-No, I'm not.")
+(88036, 90166, u"No, I'm not.")
+(91793, 95193, u"If we don't do it now.")
+(95366, 96996, u'Logo')
+(97355, 102255, u'the little Gambol here will not give a dime for his Grandma.')
+(103039, 104499, u'Enough with the clown!')
+(105568, 107498, u'Easy, no explosions.')
+(107844, 110364, u'-Shit!\n-Rage.')
+(110637, 113127, u'You think you can steal from us and walk away?')
+(113392, 114952, u"-I think.\nI'm going to spread the word:")
+(115069, 117329, u'$ 500 1000 for who to kill this clown.')
+(117583, 120613, u'Alive, $ 1 million.\nSo, I teach him some manners.')
+(121766, 124356, u'All right, listen up, call me ...')
+(124600, 128330, u'When they start taking things a little more seriously.')
+(128687, 130557, u"Here's my card.")
+
+Matching subtitles and transcriptions...

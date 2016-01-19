@@ -173,16 +173,14 @@ class matching_manager():
         # memo_back  will hold the positions chosen during DP (i dp position, j dp position)
         self.memo_back = [ [ (0, 0) for j in range(M)] for i in range(N)]
         
-        val = self.recursive_dp(N, M, subs, trans)
-        print "val = ", val
+        val = self.recursive_dp(N, M, subs, trans)        
         
         # reconstruct the matching
         i = N
         j = M
         matching = []
         while i > 0 and j > 0:
-            tup = self.memo_back[i-1][j-1]
-            print i, j, tup
+            tup = self.memo_back[i-1][j-1]            
             for ni in range(tup[0]):
                 matching.append(range(j-tup[1], j))            
             i -= tup[0]
@@ -190,7 +188,7 @@ class matching_manager():
         matching = list(reversed(matching))        
         return matching
         
-    def match_subs_trans(self, subs, trans, original_subs, acceptable_near_time = 1000):
+    def match_subs_trans(self, subs, trans, original_subs, acceptable_near_time = 3000):
         '''
             match subtitles (subs) stream with transcriptions (trans) stream
             
@@ -202,7 +200,7 @@ class matching_manager():
         #matching = self.adhoc_alignment(subs, trans)
         
         self.LogProgress("\nIntermediate matching = ")
-        self.LogProgress(matching)
+        self.LogProgress(str(matching))
         
         # maps subtitles times to match transcriptions
         for idx in range(len(matching)):

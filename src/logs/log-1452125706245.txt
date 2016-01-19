@@ -1,0 +1,74 @@
+Wed Jan 06 22:15:06 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/Inception #1 Movie CLIP - The Most Skilled Extractor (2010) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145212560818.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 11 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_2.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_3.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_4.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_5.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_6.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_7.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_8.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_9.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_10.wav
+-- recognizing audio_samples\trimmed\audio_145212560818\audio_145212560818_11.wav
+
+9 out of 11 successful transcriptions.
+(114, 7423, u'suicidal we can train your subconscious to defend itself from even the most skilled extractor how can I do')
+(7731, 10070, u'as I am the most skilled extractor')
+(10285, 23817, u"I know how to search your mind and find your secrets I know the tricks and I can teach them to you so even when you're asleep your Defence is never down")
+(23706, 24745, u'be completely open')
+(24635, 30272, u'I need to know my way around two thoughts better than your wife better than your therapist better than animal')
+(30811, 36123, u"this is a dream and you have a safe for Secrets I need to know what's in that safe")
+(36291, 39931, u'in order for the salt to work you need to completely let me')
+(41353, 44715, u'is there anything in gentlemen')
+(44557, 54360, u'other consider your proposal')
+
+Reading subtitles...
+Read 17 subtitles.
+(203019, 206773, 'Sr. Saito, podemos treinar o seu\nsubconsciente para se defender.')
+(206808, 209275, 'Mesmo contra o extrator\nmais habilidoso.')
+(209310, 210658, 'Como far\xe1 isso?')
+(210693, 213612, 'Pois sou o extrator\nmais habilidoso.')
+(213779, 216740, 'Sei onde procurar na sua mente\ne achar os seus segredos.')
+(216775, 218916, 'Conhe\xe7o os truques.\nE posso lhes ensin\xe1-los.')
+(218951, 223538, 'Para que, quando estiver\ndormindo, sua defesa n\xe3o baixe.')
+(223621, 225331, 'Mas, se quiser minha ajuda,')
+(225665, 227917, 'ter\xe1 de ser\ncompletamente sincero.')
+(227959, 230169, 'Preciso conhecer\nseus pensamentos melhor')
+(230211, 233929, 'do que a sua esposa, terapeuta.\nMelhor do que ningu\xe9m.')
+(233964, 236925, 'Se isto fosse um sonho e tivesse\num cofre cheio de segredos,')
+(236960, 239261, 'precisaria saber o que h\xe1\ndentro dele.')
+(239553, 242889, 'Para que tudo d\xea certo,\nprecisa confiar em mim...')
+(245683, 247727, 'Aproveitem a noite,\nsenhores.')
+(247810, 250021, 'Enquanto penso\nem sua oferta.')
+(252690, 254066, 'Ele sabe.')
+
+Translating subtitles...
+17 out of 17 successful translations.
+(203019, 206773, u'Mr. Saito, we can train your subconscious to defend himself.')
+(206808, 209275, u'Even against the most skilled Extractor.')
+(209310, 210658, u'How far this?')
+(210693, 213612, u"Because I'm the most skilled Extractor.")
+(213779, 216740, u'Know where to look on your mind and find its secrets.')
+(216775, 218916, u'Know the tricks.\nAnd I can teaching them.')
+(218951, 223538, u"So, when you're sleeping, your defense in the download.")
+(223621, 225331, u'But, if you want my help,')
+(225665, 227917, u'have to be completely honest.')
+(227959, 230169, u'Need to know their thoughts better')
+(230211, 233929, u'of his wife, a therapist.\nBetter than nobody m.')
+(233964, 236925, u'If this was a dream and had a safe full of secrets,')
+(236960, 239261, u"need to know what's inside it.")
+(239553, 242889, u'For all d right, you have to trust me.')
+(245683, 247727, u'Enjoy the evening, gentlemen.')
+(247810, 250021, u'While I think about your offer.')
+(252690, 254066, u'He knows.')
+
+Matching subtitles and transcriptions...

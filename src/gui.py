@@ -61,14 +61,20 @@ class SynchronizingProgressFrame(Tkinter.Frame):
         common_opt = {'fill': Tkconstants.BOTH, 'padx': 40, 'pady': 5}
         
         # define widgets
-        label_progress1 = Tkinter.Label(self, text= "Global Progress:")
-        label_progress1.pack(common_opt)        
+        self.label_progress_global = Tkinter.Label(self, text= "Global Progress:")
+        self.label_progress_global.pack(common_opt)
         
-        self.pb_hD = ttk.Progressbar(self, orient='horizontal', length=400, mode='determinate', maximum = self.max_value)
-        self.pb_hD.pack(common_opt)   
+        self.progress_global = ttk.Progressbar(self, orient='horizontal', length=400, mode='determinate', maximum = self.max_value)
+        self.progress_global.pack(common_opt)
         
-        label_logs = Tkinter.Label(self, text= "Logs:")
-        label_logs.pack()
+        self.label_progress_current = Tkinter.Label(self, text= "Current Task Progress:")
+        self.label_progress_current.pack(common_opt)
+        
+        self.progress_current = ttk.Progressbar(self, orient='horizontal', length=400, mode='determinate', maximum = self.max_value)
+        self.progress_current.pack(common_opt)
+        
+        self.label_logs = Tkinter.Label(self, text= "Logs:")
+        self.label_logs.pack()
         
         self.text_frame = Tkinter.Frame(self)
         self.text_frame.pack({'fill': Tkconstants.BOTH, 'padx': 0, 'pady': 5})
@@ -85,13 +91,20 @@ class SynchronizingProgressFrame(Tkinter.Frame):
         self.btn_cancel = Tkinter.Button(self, text ="Cancel", command = exit_function, bg = '#ffc2b3')
         self.btn_cancel.pack({'fill': Tkconstants.BOTH, 'padx': 100, 'pady': 25})
     
-    def GetProgressBarValue(self):
-        return self.pb_hD["value"]
+    def GetGlobalProgressBarValue(self):
+        return self.progress_global["value"]
     
-    def SetProgressBarToValue(self, value):        
+    def SetGlobalProgressBarToValue(self, value):        
         if value >= 0 and value <= self.max_value:
-            self.pb_hD["value"] = value
-        
+            self.progress_global["value"] = value
+    
+    def GetCurrentProgressBarValue(self):
+        return self.progress_current["value"]
+    
+    def SetCurrentProgressBarToValue(self, value):        
+        if value >= 0 and value <= self.max_value:
+            self.progress_current["value"] = value
+    
     def InsertToLogs(self, log_msg):        
         self.text_logs.config(state=Tkinter.NORMAL)
         self.text_logs.insert(Tkinter.END, log_msg)
@@ -99,6 +112,14 @@ class SynchronizingProgressFrame(Tkinter.Frame):
     
 class GuiManager():
     def __init__(self, syncBtnCallBack):
+    
+        # used for progress bars
+        self.NUM_GLOBAL_TASKS = 7.0
+        self.NUM_GLOBAL_TASKS_FINISHED = 0.0
+        self.NUM_CURRENT_TASKS = 10.0
+        self.NUM_CURRENT_TASKS_FINISHED = 0.0
+        
+        # creating root window
         self.root = Tkinter.Tk()
     
         # Properties
@@ -114,7 +135,7 @@ class GuiManager():
             self.select_frame, 
             label_txt = "Video input file:", 
             defaultextension = '.avi', 
-            filetypes = [('Audio Video Interleave', '.avi'), ('MPEG-4','.mp4')])
+            filetypes = [('MPEG-4','.mp4'), ('Audio Video Interleave', '.avi')])
         self.video_file_dialog.pack()
         self.subtitle_file_dialog = TkOpenFileDialog(
             self.select_frame, 
@@ -144,38 +165,65 @@ class GuiManager():
         self.progress_logs.append(msg)
         self.progress_lock.release()
     
+    def IncrimentGlobalProgressBar(self):
+        self.progress_lock.acquire()
+        self.NUM_GLOBAL_TASKS_FINISHED += 1.0
+        self.global_progress_value = int((self.max_progress_value * self.NUM_GLOBAL_TASKS_FINISHED / self.NUM_GLOBAL_TASKS))    
+        self.progress_lock.release()
+    
+    def ResetCurrentProgressBarValue(self, NUM_CURRENT_TASKS, task_name):
+        self.progress_lock.acquire()
+        self.NUM_CURRENT_TASKS = float(NUM_CURRENT_TASKS)
+        self.NUM_CURRENT_TASKS_FINISHED = 0.0
+        self.current_progress_value = 0
+        self.progress_frame.label_progress_current['text'] = "Current Task Progress: " + task_name
+        self.progress_lock.release()
+    
+    def IncrimentCurrentProgressBar(self):
+        self.progress_lock.acquire()
+        self.NUM_CURRENT_TASKS_FINISHED += 1.0
+        self.current_progress_value = int((self.max_progress_value * self.NUM_CURRENT_TASKS_FINISHED / self.NUM_CURRENT_TASKS))    
+        self.progress_lock.release()
+    
     def InitSynchronizingProgressFrame(self):
-        self.root.geometry("700x550")
+        self.root.geometry("700x610")
         self.root.resizable(0, 0)
         self.select_frame.destroy()
         
         # set shared variables
-        self.progress_value = 0
+        self.global_progress_value = 0
+        self.current_progress_value = 0
         self.max_progress_value = 1000
         self.progress_logs = []
         self.progress_lock = threading.Lock()
-
+        
+        # saved logs
+        self.log_file_text = u""
+        
         # create Frame to keep track of the progress of synchronization        
         self.progress_frame = SynchronizingProgressFrame(self.root, self.max_progress_value, self.ExitProgram)
         self.progress_frame.pack()
-
+        
     def UpdateSynchronizingProgressFrame(self):
         self.progress_lock.acquire()
+                
+        for log in self.progress_logs:
+            self.progress_frame.InsertToLogs(log)
+            self.log_file_text += log
+        self.progress_logs = []        
+        self.progress_frame.SetGlobalProgressBarToValue(self.global_progress_value)
+        self.progress_frame.SetCurrentProgressBarToValue(self.current_progress_value)
         
-        value = self.progress_frame.GetProgressBarValue()
-        if value < self.progress_frame.max_value:
-            # TODO delete this
-            self.progress_value += 1
-            self.progress_frame.SetProgressBarToValue(self.progress_value)            
-            for log in self.progress_logs:
-                self.progress_frame.InsertToLogs(log)
-            self.progress_logs = []
+        if self.progress_frame.GetGlobalProgressBarValue() < self.progress_frame.max_value:
             self.progress_lock.release()
             self.progress_frame.after(200, self.UpdateSynchronizingProgressFrame)
         else:
+            self.progress_frame.btn_cancel["text"] = "Close"            
             self.DisplayPromptMsg(
                 window_name = "SubSync", 
                 message_txt = "Successful synchronization.\nOutput file written")
+            print self.progress_logs
+            print self.log_file_text
             # TODO should exit?
             self.progress_lock.release()
         

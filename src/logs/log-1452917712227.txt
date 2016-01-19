@@ -1,0 +1,62 @@
+Sat Jan 16 02:15:12 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/The Matrix (1-9) Movie CLIP - Living Two Lives (1999) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145291765949.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 10 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_2.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_3.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_4.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_5.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_6.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_7.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_8.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_9.wav
+-- recognizing audio_samples\trimmed\audio_145291765949\audio_145291765949_10.wav
+
+9 out of 10 successful transcriptions.
+(707, 5576, u"it seems that you've been living")
+(7348, 11010, u'104 Thomas J Anderson programmer')
+(11110, 13146, u'picture of respectable software')
+(14407, 19090, u'you have a Social Security number to pay your taxes')
+(21884, 24013, u'Jerry auto carpet')
+(26946, 30097, u'the other related to computers')
+(31265, 34044, u'go by the hacker Alias Neo')
+(34144, 36366, u'guilty of virtually every')
+(39717, 43704, u'one of these lives has a future')
+
+Reading subtitles...
+Read 12 subtitles.
+(1180, 3808, 'Parece que voc\xea tem levado...')
+(4099, 6185, 'uma vida dupla.')
+(7686, 10147, 'Em uma vida, voc\xea \xe9\nThomas A. Anderson...')
+(10355, 13776, 'programador de uma respeit\xe1vel\nempresa de software.')
+(14777, 18030, 'Voc\xea \xe9 registrado no seguro social,\npaga seus impostos.')
+(18447, 19740, 'E voc\xea...')
+(21283, 24911, '...ajuda a senhoria a\nlevar o lixo pra fora.')
+(27413, 30583, 'A outra vida \xe9 dentro de computadores...')
+(30917, 33837, 'onde \xe9 o hacker conhecido\npelo apelido de "Neo" ...')
+(34087, 38883, 'e \xe9 culpado de quase todos os crimes\npor computador previstos na legisla\xe7\xe3o.')
+(40176, 42095, 'Uma dessas vidas...')
+(42303, 44222, 'tem futuro.')
+
+Translating subtitles...
+12 out of 12 successful translations.
+(1180, 3808, u'It seems that you have taken.')
+(4099, 6185, u'a double life.')
+(7686, 10147, u'In a life, you Thomas a. Anderson ...')
+(10355, 13776, u'a programmer say vel software company.')
+(14777, 18030, u'You registered in the social security, pay your taxes.')
+(18447, 19740, u'And you ...')
+(21283, 24911, u'... helps the landlady to take out the trash.')
+(27413, 30583, u'The hereafter in computers ...')
+(30917, 33837, u'where the hacker known by the nickname "Neo" ...')
+(34087, 38883, u'and guilty of almost all computer crimes provided for in the legislation.')
+(40176, 42095, u'One of those lives.')
+(42303, 44222, u'has a future.')
+
+Matching subtitles and transcriptions...

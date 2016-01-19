@@ -1,0 +1,214 @@
+Sun Jan 10 03:43:45 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/Pumpkin and Honey Bunny - Pulp Fiction (1-12) Movie CLIP (1994) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145240439918.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 60 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_2.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_3.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_4.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_5.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_6.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_7.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_8.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_9.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_10.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_11.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_12.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_13.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_14.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_15.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_16.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_17.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_18.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_19.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_20.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_21.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_22.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_23.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_24.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_25.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_26.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_27.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_28.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_29.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_30.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_31.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_32.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_33.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_34.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_35.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_36.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_37.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_38.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_39.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_40.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_41.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_42.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_43.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_44.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_45.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_46.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_47.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_48.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_49.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_50.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_51.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_52.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_53.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_54.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_55.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_56.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_57.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_58.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_59.wav
+-- recognizing audio_samples\trimmed\audio_145240439918\audio_145240439918_60.wav
+
+43 out of 60 successful transcriptions.
+(1600, 3383, u'Picasso coffee')
+(7684, 9606, u'Garcon means boy')
+(14464, 15504, u'displays')
+(15347, 17036, u'a coffee shop')
+(17204, 18337, u'fisherman hat')
+(19991, 21959, u"nobody ever Rob's restaurants")
+(22545, 23538, u'1up')
+(24588, 25721, u'bus')
+(25935, 27067, u'liquor stores')
+(27003, 28136, u'gas station')
+(28211, 29668, u'a trip on Instagram')
+(30904, 32594, u'restaurants on the other hand')
+(32762, 34126, u'because of their pants down')
+(34480, 36170, u'you expecting to get ripped')
+(36616, 37981, u'last expecting anyone')
+(38009, 41975, u'I bet you could cut down on the Hero factor in a place like this')
+(42282, 42996, u'Direct')
+(43350, 45922, u'famous things places in Sherwood')
+(46229, 47176, u'manager')
+(47297, 48987, u'how to f***')
+(48737, 50752, u'just want to get Yahoo free stuff')
+(50548, 53538, u'flag in the dinosaur just a f****** f*****')
+(53427, 55628, u"I'm going to take a bullet for the register")
+(55749, 57532, u'passport back')
+(57375, 61479, u'MP3 59 really give a f*** you steal information')
+(61787, 64405, u'customer scene ever food in their mouth and I was going on')
+(64666, 68399, u'mom and it having a Denver omelet Netflix must connect on interface')
+(69217, 70024, u'cheap')
+(70285, 71696, u'I got the idea')
+(71818, 73972, u'Las Vegas to sacramento')
+(74093, 75597, u'boot customer care')
+(77437, 79452, u'Unity idea taking a wallet')
+(79573, 81449, u'and it was good idea')
+(81338, 82145, u'thank you')
+(81988, 84049, u"I must know what it's me to register")
+(85285, 87021, u'no people come to restaurants')
+(89418, 90365, u'East Mountain')
+(94898, 97238, u"I'm ready let's do it right now right here")
+(100471, 103554, u'Samsung store number control')
+(103629, 104854, u'find employees')
+(111849, 113213, u'I love you honey bunny')
+(113567, 116929, u'everybody comes around')
+(116771, 120226, u'staph infection')
+
+Reading subtitles...
+Read 38 subtitles.
+(2018, 4270, 'Gar\xe7om! Caf\xe9!')
+(4556, 6391, 'Este lugar.')
+(8015, 10851, '"Gar\xe7om" \xe9 para rapazes.')
+(14592, 17052, '\x96 Este lugar? Uma lanchonete?')
+(17264, 18774, '\x96 E da\xed?')
+(19838, 22299, 'Ningu\xe9m assalta restaurantes.')
+(22726, 23810, 'Por que n\xe3o?')
+(24149, 27527, 'Os bares, lojas de bebida,\npostos de gasolina,')
+(28055, 30828, 'd\xe3o um tiro na sua cabe\xe7a.')
+(30992, 34454, 'Mas os restaurantes,\ns\xe3o pegos de cal\xe7a curta.')
+(34689, 36650, 'N\xe3o esperam ser assaltados.')
+(36890, 38725, 'Bem, n\xe3o esperam isso.')
+(38838, 42508, 'Em lugares assim, acho\nque ningu\xe9m daria uma de her\xf3i.')
+(43470, 46656, 'Estes lugares est\xe3o assegurados,\ncomo os bancos.')
+(46851, 49270, 'O gerente n\xe3o d\xe1 a m\xednima.')
+(49457, 51858, 'Quer que voc\xea d\xea o fora logo,\nsem matar os fregueses.')
+(51985, 53654, 'As gar\xe7onetes? Esquece.')
+(53747, 55554, 'Sacrificar a vida pela grana?')
+(55992, 59036, 'Os faxineiros s\xe3o ilegais,\nque ganham US$ 1,50 por hora.')
+(59112, 61531, 'N\xe3o querem\nnem saber se voc\xea assaltar o dono.')
+(61763, 64850, 'Os clientes est\xe3o se lixando.')
+(64948, 69265, 'Est\xe3o comendo e\nalgu\xe9m p\xf5e uma arma na cara deles.')
+(69564, 74252, 'Tive uma ideia na \xfaltima\nque assaltamos, lembra?')
+(74560, 77313, 'Muitos clientes entrando?')
+(77633, 80113, 'Voc\xea pensou em bater a carteira deles.')
+(80305, 82239, '\x96 Foi boa ideia.\n\x96 Obrigada.')
+(82567, 85213, 'Daria mais que o caixa.\nVerdade.')
+(85605, 88817, 'Tem muita gente em restaurantes.\nMuitas carteiras.')
+(89066, 91026, '\xc9 uma boa ideia, n\xe3o?')
+(91289, 93332, 'Muito boa.')
+(94751, 97360, 'Estou pronta.\nTer\xe1 que ser aqui e agora.')
+(97882, 99736, 'Vamos.\nTudo bem.')
+(100835, 102290, 'Igual da \xfaltima vez.')
+(102425, 105219, 'Voc\xea controla as pessoas e eu,\nos funcion\xe1rios.')
+(110166, 113336, 'Eu o amo, meu bombom.\nAmo voc\xea, do\xe7ura.')
+(114996, 116998, 'Todos quietos, \xe9 um assalto!')
+(117145, 120356, 'Se qualquer filho da puta se mexer,')
+(120470, 124432, 'mato um por um, at\xe9 o \xfaltimo!')
+
+Translating subtitles...
+38 out of 38 successful translations.
+(2018, 4270, u'Gar om! CAF!')
+(4556, 6391, u'This place.')
+(8015, 10851, u'"Gar om" for boys.')
+(14592, 17052, u'This place? A diner?')
+(17264, 18774, u'And?')
+(19838, 22299, u'Nobody m Rob restaurants.')
+(22726, 23810, u'Why no o?')
+(24149, 27527, u'The bars, liquor stores, gas stations,')
+(28055, 30828, u'(d) the shot in his place to.')
+(30992, 34454, u'But the restaurants, the caught a short lime.')
+(34689, 36650, u'N the expect to be robbed.')
+(36890, 38725, u"Well, it's expected.")
+(38838, 42508, u'In places like this, I think no one would give her a m i.')
+(43470, 46656, u'These places are provided, such as banks.')
+(46851, 49270, u'The Manager n d m nima.')
+(49457, 51858, u'Want you d out soon, without killing the customers.')
+(51985, 53654, u'The OHR onetes? Forget.')
+(53747, 55554, u'Sacrificing life for money?')
+(55992, 59036, u'The janitors are illegal, earning $ 1.50 per hour.')
+(59112, 61531, u'N want to know if you rob the owner.')
+(61763, 64850, u'Customers est if sanding.')
+(64948, 69265, u'EST the eating and some m p and a gun in their face.')
+(69564, 74252, u'I had an idea in the last that we, remember?')
+(74560, 77313, u'Many customers coming in?')
+(77633, 80113, u'You thought about hitting the wallet of them.')
+(80305, 82239, u'Was a good idea.\nThank you.')
+(82567, 85213, u"I'd give more than the box.\nTruth.")
+(85605, 88817, u'There are a lot of people in restaurants.\nMany portfolios.')
+(89066, 91026, u'a good idea, no?')
+(91289, 93332, u'Very Good')
+(94751, 97360, u"I'm ready.\nHave to be here and now.")
+(97882, 99736, u"Let's go.\nAll right.")
+(100835, 102290, u'Like the last time.')
+(102425, 105219, u'VOC controls people and I, the funcion rivers.')
+(110166, 113336, u'I love you, my sweet.\nI love you, the ura.')
+(114996, 116998, u'All quiet, a robbery!')
+(117145, 120356, u'If any son of a bitch move,')
+(120470, 124432, u'kill one by one at the last.')
+
+Matching subtitles and transcriptions...

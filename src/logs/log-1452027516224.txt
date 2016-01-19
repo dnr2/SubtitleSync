@@ -1,0 +1,68 @@
+Tue Jan 05 18:58:36 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/video_samples/person.mp4" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145202747553.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 13 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_2.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_3.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_4.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_5.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_6.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_7.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_8.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_9.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_10.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_11.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_12.wav
+-- recognizing audio_samples\trimmed\audio_145202747553\audio_145202747553_13.wav
+Could not understand audio
+
+10 out of 13 successful transcriptions.
+(5130, 11231, u'the government has a secret system a machine that spies on you every hour of every day')
+(11724, 15922, u'I designed the machine to detect acts of Terror')
+(16043, 18801, u'violent crimes involving Ordinary People')
+(19433, 23584, u"the government considered these people irrelevant we don't")
+(24217, 26464, u'wanted by the authorities')
+(27096, 28646, u'reworking secrets')
+(29093, 30875, u"you'll never find")
+(30904, 33244, u'but victim or perpetrator')
+(33087, 34544, u'if your numbers up')
+(34898, 36402, u'will find you')
+
+Reading subtitles...
+Read 12 subtitles.
+(383, 1483, 'N\xf3s estamos sendo vigiados.')
+(1986, 4455, 'O Governo possui\num sistema secreto.')
+(4456, 8358, 'Uma m\xe1quina que o espia\ntodas as horas todos os dias.')
+(9671, 12188, 'Desenhei a m\xe1quina para\nencontrar atos de terrorismo,')
+(12189, 14031, 'mas ela v\xea tudo.')
+(18032, 21366, 'Crimes violentos que\nenvolvem pessoas normais.')
+(21367, 24502, 'Pessoas que o Governo\nconsideram irrelevantes.')
+(24503, 25903, 'N\xf3s n\xe3o.')
+(27405, 33109, 'Ca\xe7ados pelas autoridades,\ntrabalhamos em segredo.')
+(33110, 35877, 'Nunca v\xe3o nos encontrar.')
+(35878, 38181, 'Mas, se for v\xedtima\nou criminoso, e o seu')
+(38182, 41455, 'n\xfamero for escolhido,\nn\xf3s vamos encontr\xe1-lo.')
+
+Translating subtitles...
+12 out of 12 successful translations.
+(383, 1483, u'We&#39;re being watched.')
+(1986, 4455, u'The government has a secret system.')
+(4456, 8358, u'A machine that spies all hours every day.')
+(9671, 12188, u'Drew amquina to find acts of terrorism,')
+(12189, 14031, u'but she sees everything.')
+(18032, 21366, u'Violent crimes involving ordinary people.')
+(21367, 24502, u'People that the Government consider irrelevant.')
+(24503, 25903, u'Nsno.')
+(27405, 33109, u'Hunted by the authorities, we work in secret.')
+(33110, 35877, u'Vo never meet.')
+(35878, 38181, u'But if the victim or criminal, and your')
+(38182, 41455, u'number is chosen, we&#39;ll find him.')
+
+Matching subtitles and transcriptions...

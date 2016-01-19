@@ -1,0 +1,26 @@
+REUNIAO COM PROFESSOR GIORDANO
+
+- Mudar de futuro para passado / presente.
+- Related work, falar do metodo em geral, mas nao descrever como minha ferramenta na parte de trabalhos relacionados.
+- Fazer um diagrama mais alto nivel com desenhos e etc.
+- Falar que a ferramenta também ja resolve para o caso especifico da legenda no mesma.
+- Com essa medida eu posso detectar isso, com a outra eu detecto isso outro.
+- Matriz de confusão, delta absoluto e delta relativo.
+- Tentar usar o share Latex. Senão compartilhar o git com Giordano.
+
+PONTOS DE FELICITY:
+
+- Ver se vai falar sobre "building a parallel corpus out of translated subtitles".
+
+MELHORIAS NO CODIGO:
+
+- escrever codigo para gerar metricas de teste
+- Silence detector com ajuste de threshold de energia adaptativo. (filmes antigos)
+- Dar suporte a mais formatos de legenda além de .sub
+- Quando tamanho do silencio for muito pequeno, juntar partes. (falas lentas)
+- Quando tamanho do silencio for muito grande, quebrar partes. (ruido)
+- considerar os matching vazio para as transcricoes
+- nao descartar quando o audio nao for entendido
+- alignment penalizado pela duração
+- remover tags dos textos (e.g. <b> ou <i> que estão presentes na lengenda)
+- Separar matching grandes (várias linhas por legenda) usando contagem de letras

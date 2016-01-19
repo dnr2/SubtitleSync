@@ -36,22 +36,24 @@ class speech_recognition_manager():
         timestamped_texts = []
         recognizer = SpeechRecognizer.Recognizer()
         transcription = ''
-
+        self.gui_manager.ResetCurrentProgressBarValue(len(timestamped_segments), "Speech Recognizer")
+        
         for timestamped_segment in timestamped_segments:
             with SpeechRecognizer.WavFile(timestamped_segment[2]) as source:
                 audio = recognizer.record(source)
 
-            self.LogProgress("-- recognizing " + timestamped_segment[2] + "\n")
+            self.LogProgress(u"-- recognizing " + timestamped_segment[2] + "\n")
             for times in range(0,2):
                 try:
                     transcription = recognizer.recognize(audio)
                     break
                 except LookupError as error:
                     if times == 1 :
-                        self.LogProgress("Could not understand audio\n")
+                        self.LogProgress(u"Could not understand audio\n")
 
             if transcription != '':
                 timestamped_texts.append((timestamped_segment[0], timestamped_segment[1], unicode(transcription)))
+            self.gui_manager.IncrimentCurrentProgressBar()
             transcription = ''
 
         return timestamped_texts
@@ -79,13 +81,16 @@ class speech_recognition_manager():
         timestamped_translations = []
         translator = Translator(from_lang = from_language, to_lang = to_language)
         translation = u''
-
+        
+        self.gui_manager.ResetCurrentProgressBarValue(len(timestamped_segments), "Translator")
+        
         for timestamped_segment in timestamped_segments:
             translation = translator.translate(timestamped_segment[2])
             if sys.version_info.major == 2:
                 translation = translation.encode(locale.getpreferredencoding())
 
             timestamped_translations.append((timestamped_segment[0], timestamped_segment[1], unicode(translation)))
+            self.gui_manager.IncrimentCurrentProgressBar()
             translation = u''
 
         return timestamped_translations

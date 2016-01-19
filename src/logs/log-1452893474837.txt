@@ -1,0 +1,74 @@
+Fri Jan 15 19:31:14 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/The Matrix (1-9) Movie CLIP - Living Two Lives (1999) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_145289341798.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 16 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_2.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_3.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_4.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_5.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_6.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_7.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_8.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_9.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_10.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_11.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_12.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_13.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_14.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_15.wav
+-- recognizing audio_samples\trimmed\audio_145289341798\audio_145289341798_16.wav
+
+10 out of 16 successful transcriptions.
+(857, 3337, u"it seems that you've been living")
+(3690, 4962, u'Thule')
+(7498, 10860, u'104 Thomas a Anderson program')
+(11306, 12300, u'respect')
+(15347, 17965, u'social security number to pay your taxes')
+(23149, 23863, u'garb')
+(27096, 29947, u'the other related to computers')
+(31415, 33894, u'go by the hacker Alias Neo')
+(39867, 41232, u'one of these alive')
+(42096, 43507, u'has a future')
+
+Reading subtitles...
+Read 12 subtitles.
+(1075027, 1077655, 'Parece que voc\xea tem levado...')
+(1077946, 1080032, 'uma vida dupla.')
+(1081533, 1083994, 'Em uma vida, voc\xea \xe9\nThomas A. Anderson...')
+(1084202, 1087622, 'programador de uma respeit\xe1vel\nempresa de software.')
+(1088623, 1091876, 'Voc\xea \xe9 registrado no seguro social,\npaga seus impostos.')
+(1092293, 1093586, 'E voc\xea...')
+(1095129, 1098757, '...ajuda a senhoria a\nlevar o lixo pra fora.')
+(1101259, 1104429, 'A outra vida \xe9 dentro de computadores...')
+(1104763, 1107682, 'onde \xe9 o hacker conhecido\npelo apelido de "Neo" ...')
+(1107932, 1112728, 'e \xe9 culpado de quase todos os crimes\npor computador previstos na legisla\xe7\xe3o.')
+(1114021, 1115940, 'Uma dessas vidas...')
+(1116148, 1118067, 'tem futuro.')
+
+Translating subtitles...
+12 out of 12 successful translations.
+(1075027, 1077655, u'It seems that you have taken.')
+(1077946, 1080032, u'a double life.')
+(1081533, 1083994, u'In a life, you Thomas a. Anderson ...')
+(1084202, 1087622, u'a programmer say vel software company.')
+(1088623, 1091876, u'You registered in the social security, pay your taxes.')
+(1092293, 1093586, u'And you ...')
+(1095129, 1098757, u'... helps the landlady to take out the trash.')
+(1101259, 1104429, u'The hereafter in computers ...')
+(1104763, 1107682, u'where the hacker known by the nickname "Neo" ...')
+(1107932, 1112728, u'and guilty of almost all computer crimes provided for in the legislation.')
+(1114021, 1115940, u'One of those lives.')
+(1116148, 1118067, u'has a future.')
+
+Matching subtitles and transcriptions...

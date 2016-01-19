@@ -1,0 +1,134 @@
+Fri Jan 15 02:04:47 2016
+Extracting audio...Running ffmpeg -i "C:/Users/dnr2/Documents/UFPE/2015.1/MUSICAL/SubtitleSync/src/tests/12 Angry Men (1-10) Movie CLIP - Kids These Days (1957) HD.avi" -ab 160k -ac 1 -ar 44100 -vn "audio_samples\audio_14528305683.wav"
+
+Extraction finished.
+
+Detecting speech segments...
+Found 20 possible segments.
+Transcripting speech segments...
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_1.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_2.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_3.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_4.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_5.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_6.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_7.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_8.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_9.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_10.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_11.wav
+Could not understand audio
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_12.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_13.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_14.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_15.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_16.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_17.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_18.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_19.wav
+-- recognizing audio_samples\trimmed\audio_14528305683\audio_14528305683_20.wav
+
+16 out of 20 successful transcriptions.
+(4433, 5148, u'the normals')
+(21662, 22748, u'how about you')
+(25935, 26835, u'Natomas')
+(29325, 30132, u'forever')
+(35966, 36727, u'weather')
+(37777, 38538, u'interstate')
+(46787, 47547, u'Morgan')
+(51477, 52609, u'real Handy')
+(56585, 57300, u'5 year')
+(61554, 62965, u'you like that')
+(68660, 69885, u'Hello Kitty')
+(69635, 70953, u"where's the girl my promise")
+(70796, 71696, u'star')
+(86353, 87114, u'Sears Auto')
+(98381, 99049, u'Toronto')
+(123273, 123987, u'area')
+
+Reading subtitles...
+Read 38 subtitles.
+(440, 2442, 'Esse rapaz j\xe1 apanhou tanto...')
+(2443, 6448, 'que a viol\xeancia \xe9 praticamente\nnormal para ele.')
+(6942, 9209, 'Apenas n\xe3o consigo\nver dois tapas na cara...')
+(9454, 11053, 'como motivo\npara ele matar.')
+(11350, 14799, 'Podem ter sido dois de muitos.\nTodo mundo tem um limite.')
+(16860, 18028, 'Algo mais?')
+(19386, 21556, '- N\xe3o.\n- Est\xe1 bem.')
+(22391, 23559, 'E voc\xea?')
+(25395, 27982, 'N\xe3o sei.\nTudo j\xe1 foi dito.')
+(28981, 32069, 'Pode falar a vida toda\nque d\xe1 no mesmo.')
+(32489, 35035, 'O garoto d\xe1 um banho.')
+(35410, 37496, 'D\xeaem uma olhada\nna ficha dele.')
+(37497, 40500, 'Com dez anos, foi para\no juizado de menores.')
+(40501, 42504, 'Jogou uma pedra\nna professora.')
+(42505, 46509, 'Com quinze, foi para o\nreformat\xf3rio. Roubou um carro.')
+(46510, 48512, 'Foi preso por roubo.')
+(48513, 51516, 'Foi pego duas vezes\nbrigando com faca.')
+(51517, 54120, 'Dizem que \xe9 muito\nhabilidoso com uma faca.')
+(54474, 56524, '\xc9 um primor de rapaz.')
+(56525, 60531, 'Desde os cinco anos,\napanhava do pai a socos.')
+(60631, 63535, 'Eu tamb\xe9m o faria.\nCom um filho desses...')
+(63635, 67289, '\xc9 por causa do jeito que\nas crian\xe7as s\xe3o hoje em dia.')
+(68460, 72295, 'Quando eu era crian\xe7a,\nchamava meu pai de senhor.')
+(72650, 76556, '"Certo, senhor." Ouvem-nas\nchamando os pais assim hoje?')
+(76656, 79477, 'Os pais parecem achar\nque n\xe3o importa mais.')
+(79577, 82023, '- Tem filhos?\n- Tr\xeas.')
+(82867, 84077, 'Eu tenho um.')
+(85732, 88360, 'Tem vinte e dois anos.')
+(93415, 96628, 'Quando tinha nove anos,\ncorreu de uma briga.')
+(98074, 101785, 'Eu vi. Fiquei t\xe3o constrangido\nque quase vomitei.')
+(103033, 105118, 'Disse que faria\ndele um homem...')
+(105516, 108132, 'nem que o partisse\nao meio, tentando.')
+(110196, 112825, 'Bem, fiz dele um homem.')
+(113444, 116178, 'Quando tinha 16 anos,\ntivemos uma briga.')
+(116533, 119664, 'Acertou-me no queixo.\nEle \xe9 grandalh\xe3o.')
+(122458, 125088, 'N\xe3o o vejo h\xe1 dois anos.')
+(128048, 129258, 'Filhos!')
+(130206, 132834, 'Despeda\xe7am seu cora\xe7\xe3o.')
+
+Translating subtitles...
+38 out of 38 successful translations.
+(440, 2442, u'This boy j got so much.')
+(2443, 6448, u'the viol of almost normal for him.')
+(6942, 9209, u"Just can't see him two slaps in the face.")
+(9454, 11053, u'as a motive for him to kill.')
+(11350, 14799, u'May have been two of the many.\nEveryone has a limit.')
+(16860, 18028, u'Something else?')
+(19386, 21556, u'-N.\n-Okay.')
+(22391, 23559, u'And you?')
+(25395, 27982, u'N the know.\nAll j.')
+(28981, 32069, u'Can talk all my life d.')
+(32489, 35035, u'D boy a bath.')
+(35410, 37496, u'D in a look in his file.')
+(37497, 40500, u'With ten years, went to juvenile court.')
+(40501, 42504, u'He threw a rock at a teacher.')
+(42505, 46509, u'With fifteen, went to reformat rio. He stole a car.')
+(46510, 48512, u'He was arrested for theft.')
+(48513, 51516, u'He was caught twice fighting with knife.')
+(51517, 54120, u'They say very skilled with a knife.')
+(54474, 56524, u'a masterpiece of boy.')
+(56525, 60531, u'Since I was five, I caught the father punches.')
+(60631, 63535, u'I also would.\nWith a son.')
+(63635, 67289, u'because of the way the kids are these days.')
+(68460, 72295, u'When I was a child, my father used to call Mr.')
+(72650, 76556, u'"Okay, Sir." Hear them calling the parents like that today?')
+(76656, 79477, u'The parents seem to think the matter over.')
+(79577, 82023, u'-Have children?\n-Three.')
+(82867, 84077, u'I have a--')
+(85732, 88360, u'Has twenty-two years.')
+(93415, 96628, u'At the age of nine, ran from a fight.')
+(98074, 101785, u'I saw. I was t the embarrassed that I almost threw up.')
+(103033, 105118, u'He said he would make him a man.')
+(105516, 108132, u'even if the break in half, trying to.')
+(110196, 112825, u'Well, made him a man.')
+(113444, 116178, u'When I was 16 years old, had a fight.')
+(116533, 119664, u'Hit me on the Chin.\nHe grandalh the.')
+(122458, 125088, u'N o h I see two years.')
+(128048, 129258, u'Son')
+(130206, 132834, u'Despeda am your cora.')
+
+Matching subtitles and transcriptions...
